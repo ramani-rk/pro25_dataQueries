@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Datas</title>
+    <style>
+        table
+        {
+            border-collapse: collapse;
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <h1>School_Datas</h1>
+        <table border="2px" cellspacing="5px" cellpadding="5px">
+            <tr>
+                <th>SCHOOL_NAME</th>
+                <th>SCHOOL_LOCATION</th>
+                <th>PRINCIPAL_NAME</th>
+            </tr>
+            {% for sd in create %}
+                <tr>
+                    <td>{{sd.School_name}}</td>
+                    <td>{{sd.School_location}}</td>
+                    <td>{{sd.school_principal}}</td>
+                </tr>
+            {% endfor %}
+        </table>
+    </center>
+</body>
+</html>

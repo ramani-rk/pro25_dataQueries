@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>create_school</title>
+    <style>
+        input,button:hover
+        {
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <h1>School DataBase</h1>
+        <form method="POST">
+            {% csrf_token %}
+                <label for="sn">School Name</label>
+                    <input type="text" name="sn" id="sn"> <br><br>
+
+                <label for="sl">School Location</label>
+                    <input type="text" name="sl" id="sl"> <br><br>
+
+                <label for="sp">School Principal</label>
+                    <input type="text" name="sp" id="sp"> <br><br>
+
+                <input type="submit">
+        </form>
+    </center>
+</body>
+</html>
